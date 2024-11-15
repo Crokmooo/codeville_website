@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
-:root{
+:root {
     --color1: #469B9B;
     --color2: #F06B1D;
     --color3: #00EFEE;
@@ -35,7 +35,7 @@ header {
     border-bottom: 2px solid var(--color3);
 }
 
-section{
+section {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -44,11 +44,11 @@ section{
     background-color: var(--color4);
 }
 
-.otherbackground{
+.otherbackground {
     background-color: var(--color5);
 }
 
-section p{
+section p {
     width: 50%;
     text-align: justify;
     border-bottom: 3px solid var(--color2);
@@ -56,7 +56,7 @@ section p{
     padding: 10px 0;
 }
 
-h1, h2{
+h1, h2 {
     color: white;
 }
 
@@ -75,10 +75,10 @@ nav li {
     transition: background-color 0.3s;
 }
 
-nav li:hover{
+nav li:hover {
     background-color: var(--color3);
 
-    a{
+    a {
         color: var(--color1)
     }
 }
@@ -104,6 +104,7 @@ button:hover {
     padding: 10px 40px;
 }
 
+<<<<<<< HEAD
 .indice{
   border: 3px solid var(--color2);
   background-color: cornflowerblue;
@@ -118,8 +119,47 @@ button:hover {
 }
 
 footer{
+=======
+.indice {
+    border: 3px solid var(--color2);
+    background-color: var(--color4);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.indice:hover {
+    color: #c6e2ff;
+    text-shadow: 0 0 54px rgba(202, 228, 225, 1);
+}
+
+footer {
+>>>>>>> feature/special-effects
     padding: 20px;
     background-color: var(--color1);
     border-top: 2px solid var(--color3);
     color: white;
+}
+
+
+.scintillement {
+    font-size: 3rem;
+    animation: scintillement 1.5s infinite alternate;
+}
+
+/* Animation de scintillement */
+@keyframes scintillement {
+    0% {
+        opacity: 1;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff007f, 0 0 40px #ff007f, 0 0 50px #ff007f, 0 0 60px #ff007f, 0 0 70px #ff007f;
+    }
+    50% {
+        opacity: 0.6;
+        text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff007f, 0 0 20px #ff007f, 0 0 25px #ff007f, 0 0 30px #ff007f, 0 0 35px #ff007f;
+    }
+    100% {
+        opacity: 0.3;
+        text-shadow: 0 0 2px #fff, 0 0 5px #ff00ff, 0 0 10px #ff007f, 0 0 15px #ff007f, 0 0 20px #ff007f, 0 0 25px #ff007f, 0 0 30px #ff007f;
+    }
 }
